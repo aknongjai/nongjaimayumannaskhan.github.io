@@ -6,10 +6,11 @@
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <style type="text/css">
-      p{
-        font-size: 50px;
-      }
+body{
+  font-family: 'Acme', sans-serif;
+}
       img{
         max-width: 100%;
       }
@@ -20,11 +21,81 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        font-size: 50px;
-        color: black;
         transform: translate(-50%, -50%);
       }
+      .s-title-name{
+        letter-spacing: 0.2rem;
+        color: white;
+        font-size: 130%;
+        font-family: 'Acme', sans-serif;
+      }
+      .s-title-hey{
+        text-align: center;
+        color: white;
+        font-style: italic;
+        font-family: 'Acme', sans-serif;
+      }
+      .lalala {
+ overflow: hidden;
+ text-align: center;
+}
+.lalala:before,
+.lalala:after {
+ background-color: #fff;
+ content: "";
+ display: inline-block;
+ height: 3px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+.lalala:before {
+ right: 0.5em;
+ margin-left: -50%;
+ margin-bottom: 30px;
+}
+.lalala:after {
+ left: 0.5em;
+ margin-bottom: 30px;
+ margin-right: -50%;
+}
 
+
+.lala {
+overflow: hidden;
+text-align: center;
+}
+.lala:before,
+.lala:after {
+background-color: #000;
+content: "";
+display: inline-block;
+height: 3px;
+position: relative;
+vertical-align: middle;
+width: 50%;
+}
+.lala:before {
+right: 0.5em;
+margin-left: -50%;
+margin-bottom: 30px;
+}
+.lala:after {
+left: 0.5em;
+margin-bottom: 30px;
+margin-right: -50%;
+}
+.header-projects{
+  letter-spacing: 0.2rem;
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 130%;
+  font-family: 'Acme', sans-serif;
+}
+.details{
+  margin-left: 20px;
+}
     </style>
   </head>
   <body>
@@ -38,9 +109,12 @@
      <div class="container">
        <span class="navbar-brand mb-0 h1">Nongjaimayum Annas Khan</span>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
+         <!-- <span class="navbar-toggler-icon"></span> -->
+         <div class="navbar navbar-header">
+            <span class="navbar-brand mb-0 h1">Nongjaimayum Annas Khan</span>
+         </div>
        </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav mr-auto">
            <li class="nav-item active"><a class="nav-link" href="#lorem">About<span class="sr-only">(current)</span></a></li>
            <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
@@ -49,7 +123,7 @@
            <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
          </ul>
-       </div>
+       </div> -->
 
 
 
@@ -59,50 +133,80 @@
      <img id="profilepic" src="https://i.imgur.com/wJ4ka6q.jpg" alt="My Photo">
      <!-- <div class="centered">Hey I am Annas Khan</div> -->
      <div class="centered">
-       <h2><strong>ANNAS KHAN</strong></h2>
+       <div class="s-title">
+         <h4 class="s-title-hey">Hey, I am</h4>
+       </div>
+       <h1 class="s-title-name">
+          <p>
+            <strong class="lalala">ANNAS KHAN</strong>
+          </p>
+       </h1>
      </div>
+</div>
+
+<div class="container">
+   <div class="header-projects">
+     <h1 class="lala">Here's what I've done so far</h1>
    </div>
-   <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p id="contacts">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <div class="project1">
+     <h3>Android App to Play Music Stored in Firebase:</h3>
+     <!-- <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="badge badge-primary" class="disabled">GitHub Link</a></h6> -->
+     <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">GitHub Link</a><span><em class="details">(This repository is still private. The app is getting its finishing touch.)</em></span></h6>
+
+     <p><strong>Technologies used: </strong>Android Studio, Java, Firebase.</p>
+     <p>In this project, first songs are uploaded to firebase storage. Second, the songs list with the song names, singer, album artist are added in firebase realtime database  along   with the links of the songs stored in the storage. Then the app has a recycler view to list the songs available in the realtime database. When pressed to any adapter of the recyclerview which is used to put the song names, a background thread AsyncTask loads the song and play using android mediaplayer API. I have also integrated YouTube API in my project to enable users to load, search and play YouTube videos from the app</p>
+   </div>
+   <div class="project2">
+     <h3>Android Recycler View:</h3>
+     <h6><a href="https://github.com/nongjaimayumannaskhan/test-recyclerview" class="badge badge-primary">GitHub Link</a></h6>
+     <!-- <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">GitHub Link</a><span><em class="details">(This repository is still private. The app is getting its finishing touch.)</em></span></h6> -->
+
+     <p><strong>Technologies used: </strong>Android Studio, Java.</p>
+     <p>A Simple recycler view where the adapter is enabled to listen to clicks and brings to another activity and also pass data from the adapter to the new activity through intent extras.</p>
+   </div>
+   <div class="project3">
+     <h3>Android Quiz App:</h3>
+     <h6><a href="https://github.com/nongjaimayumannaskhan/a-simple-quiz" class="badge badge-primary">GitHub Link</a></h6>
+     <!-- <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">GitHub Link</a><span><em class="details">(This repository is still private. The app is getting its finishing touch.)</em></span></h6> -->
+
+     <p><strong>Technologies used: </strong>Android Studio, Java.</p>
+     <p>Android app that has a progressbar for the progress of the quiz, which increases after every attempt of the question by some percentage according to the number of questions in the quiz, two text views one for questions and one for score, two buttons for a true and a false option.</p>
+   </div>
+   <div class="project4">
+     <h3>Android Weather App:</h3>
+     <h6><a href="https://github.com/nongjaimayumannaskhan/check-weather" class="badge badge-primary">GitHub Link</a></h6>
+     <!-- <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">GitHub Link</a><span><em class="details">(This repository is still private. The app is getting its finishing touch.)</em></span></h6> -->
+
+     <p><strong>Technologies used: </strong>Android Studio, Java, OpenWeatherMap.</p>
+     <p>Android App where I’ve an EditText to get the city name for which  the user wants to get whether information, a TextView to show the weather, and an ImageView to put a descriptive image of the current selected weather of the city. </p>
+   </div>
+   <div class="project5">
+     <h3>Android App to Play Music Stored in raw:</h3>
+     <h6><a href="https://github.com/nongjaimayumannaskhan/xylophone" class="badge badge-primary">GitHub Link</a></h6>
+     <!-- <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">GitHub Link</a><span><em class="details">(This repository is still private. The app is getting its finishing touch.)</em></span></h6> -->
+
+     <p><strong>Technologies used: </strong>Android Studio, Java.</p>
+     <p>Android app where I store some sounds in raw folder in the res directory and play it on press of buttons.</p>
+   </div>
+   <div class="project6">
+     <h3>A simple WordPress Website:</h3>
+     <h6><a href="https://github.com/nongjaimayumannaskhan/wordpress-websitetabasumgroupofcompanies" class="badge badge-primary">GitHub Link</a></h6>
+     <!-- <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">GitHub Link</a><span><em class="details">(This repository is still private. The app is getting its finishing touch.)</em></span></h6> -->
+
+     <p><strong>Technologies used: </strong>Local By Flywheel, Php, Html, css.</p>
+     <p>A simple website made using local by flywheel, php, HTML, CSS.</p>
+   </div>
+   <div class="project7">
+     <h3>Android Recycler View:</h3>
+     <!-- <h6><a href="https://github.com/nongjaimayumannaskhan/test-recyclerview" class="badge badge-primary">GitHub Link</a></h6> -->
+     <h6><a href="https://github.com/nongjaimayumannaskhan/withyoutube" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">GitHub Link</a><span><em class="details">(This repository is still private. The app is getting its finishing touch.)</em></span></h6>
+
+     <p><strong>Technologies used: </strong>Android Studio, Java.</p>
+     <p> Android service and notification, where I created a notification channel to show foreground service while a music is played. Actually it is a test project to integrate with the Android App to Play Music Stored in Firebase.</p>
+   </div>
+</div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
